@@ -1,0 +1,82 @@
+/* Reset and global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Centering & Layout */
+.faq-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.faq-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-size: 1.8rem;
+}
+
+/* FAQ Item Styling */
+.faq-item {
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Question Bar Style & Hover Effect */
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 12px 0;
+    color: #34495e;
+    transition: color 0.2s ease;
+}
+
+.faq-question:hover {
+    color: #3498db;
+}
+
+.icon {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Answer Paragraph Styling */
+.faq-answer {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+    padding: 10px 0;
+}
+
+/* Utility Class for Toggling Visibility */
+.hidden {
+    display: none;
+}
